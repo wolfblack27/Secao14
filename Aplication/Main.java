@@ -36,6 +36,16 @@ public class Main {
 			System.out.println("Update!");
 		}
 		
+	
+	// Testando a anotação @Override
+		
+		ContaPoupanca cp = new ContaPoupanca(1212, "Thiago", 100.00, 10.0);
+		cp.withdraw(10);
+		System.out.printf("Seu saldo da conta Poupança: %.2f %n",cp.getBalance());
+		ContaNegocio cn = new ContaNegocio(1111, "Marisa", 100.00, 500.00);
+		cn.withdraw(10);
+		System.out.printf("Seu saldo da conta Negocio: %.2f",cn.getBalance());
+		
 	}
 
 }

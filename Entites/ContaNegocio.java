@@ -16,11 +16,20 @@ public class ContaNegocio extends Conta {
 
 	public void loan(double amount) {
 
-		if (loanLimit>amount) {
-			
+		if (loanLimit > amount) {
+
 			balance += amount - 10;
-	
+
 		}
-		
+
 	}
+
+	@Override
+	public void withdraw(double amount) {
+		balance-=amount+15;
+	}
+
+
+
+
 }
