@@ -1,5 +1,8 @@
 package Aplication;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import Entites.Conta;
 import Entites.ContaNegocio;
 import Entites.ContaPoupanca;
@@ -39,12 +42,23 @@ public class Main {
 	
 	// Testando a anotação @Override
 		
-		ContaPoupanca cp = new ContaPoupanca(1212, "Thiago", 100.00, 10.0);
+		Conta cp = new ContaPoupanca(1212, "Thiago", 100.00, 10.0);
 		cp.withdraw(10);
+		
 		System.out.printf("Seu saldo da conta Poupança: %.2f %n",cp.getBalance());
-		ContaNegocio cn = new ContaNegocio(1111, "Marisa", 100.00, 500.00);
+		Conta cn = new ContaNegocio(1111, "Thiago", 100.00, 500.00);
 		cn.withdraw(10);
-		System.out.printf("Seu saldo da conta Negocio: %.2f",cn.getBalance());
+		System.out.printf("Seu saldo da conta Negocio: %.2f%n",cn.getBalance());
+		
+		
+		
+	
+		
+	
+			
+			
+			
+		
 		
 	}
 
